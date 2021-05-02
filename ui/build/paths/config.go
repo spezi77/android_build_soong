@@ -99,6 +99,14 @@ var Configuration = map[string]PathConfig{
 	"unzip":   Allowed,
 	"zip":     Allowed,
 
+	// Allow custom toolchain commands
+    "aarch64-linux-android-ar":      Allowed,
+    "aarch64-linux-android-as":      Allowed,
+    "aarch64-linux-android-ld":      Allowed,
+    "aarch64-linux-android-nm":      Allowed,
+    "aarch64-linux-android-objcopy": Allowed,
+    "aarch64-linux-android-objdump": Allowed,
+
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
 	"ar":         Forbidden,
